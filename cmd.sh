@@ -20,3 +20,13 @@ npx tailwindcss init
     ],
 
 
+
+#  for responsivness
+npm i react-native-responsive-screen
+# for liner gradient
+npm i expo-linear-gradient
+# for adding animation to the screens
+npm install react-native-reanimated
+react-native-reanimated/plugin
+
+npm start -- --reset-cache
