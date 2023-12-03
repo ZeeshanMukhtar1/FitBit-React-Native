@@ -7,6 +7,9 @@ import {
   heightPercentageToDP as hp,
 } from 'react-native-responsive-screen';
 
+import { FadeIn, FadeInDown, FadeOut } from 'react-native-reanimated';
+import Animated from 'react-native-reanimated';
+
 export default function index() {
   return (
     <View className="justify-end flex-1">
@@ -25,7 +28,10 @@ export default function index() {
         }}
         className="justify-end flex-1 pb-12 space-y-8"
       >
-        <View className="flex items-center">
+        <Animated.View
+          entering={FadeInDown.delay(100).springify()}
+          className="flex items-center"
+        >
           <Text
             style={{
               fontSize: hp('5'),
@@ -42,9 +48,9 @@ export default function index() {
           >
             For you
           </Text>
-        </View>
+        </Animated.View>
 
-        <View>
+        <Animated.View entering={FadeInDown.delay(200).springify()}>
           <TouchableOpacity
             style={{
               height: hp('7'),
@@ -61,7 +67,7 @@ export default function index() {
               Get Started
             </Text>
           </TouchableOpacity>
-        </View>
+        </Animated.View>
       </LinearGradient>
     </View>
   );

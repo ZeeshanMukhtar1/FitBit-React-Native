@@ -1,32 +1,35 @@
-#  for making a bear minimun expo router app
+# Create a bare minimum Expo Router app using tabs template
 npx create-expo-app@latest --template tabs@49
 
-#  for adding a nativewind (stable version) to expo app
-npm i nativewind
-npm i --dev tailwindcss@3.3.2
+# Add Nativewind (stable version) to Expo app
+npm install nativewind
+npm install --save-dev tailwindcss@3.3.2
 npx tailwindcss init
-  content: [
-    './App.{js,jsx,ts,tsx}',
-    './app/**/*.{js,jsx,ts,tsx}',
-    './components/**/*.{js,jsx,ts,tsx}',
-  ],
 
-   //  for nativewind
-       plugins: [
-      // Required for expo-router
-      'expo-router/babel',
-      //  for nativewind
-      'nativewind/babel',
-    ],
+# Configure Tailwindcss for usage in specified files
+# Update 'content' and 'plugins' sections in tailwind.config.js
+# Example content configuration for Expo app structure
+# content: [
+#   './App.{js,jsx,ts,tsx}',
+#   './app/**/*.{js,jsx,ts,tsx}',
+#   './components/**/*.{js,jsx,ts,tsx}',
+# ]
 
+# Install React Native Responsive Screen for responsiveness
+npm install react-native-responsive-screen
 
+# Install Expo Linear Gradient for linear gradient support
+npm install expo-linear-gradient
 
-#  for responsivness
-npm i react-native-responsive-screen
-# for liner gradient
-npm i expo-linear-gradient
-# for adding animation to the screens
-npm install react-native-reanimated
-react-native-reanimated/plugin
+# For adding animation to the screens
+# Commenting out react-native-reanimated due to potential compatibility issues
+# npm install react-native-reanimated
+# Sometimes it may create an issue of SDK version compatibility
 
+# Install Expo version of react-native-reanimated
+npx expo install react-native-reanimated
+# Install Reanimated plugin
+npm install react-native-reanimated/plugin
+
+# Start Expo with cache reset
 npm start -- --reset-cache
