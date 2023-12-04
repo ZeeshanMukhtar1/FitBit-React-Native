@@ -1,3 +1,4 @@
+
 # Create a bare minimum Expo Router app using tabs template
 npx create-expo-app@latest --template tabs@49
 
