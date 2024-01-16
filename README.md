@@ -58,10 +58,12 @@ Contributions are welcome! If you'd like to contribute to the development of Fit
 
 ## Screenshots
 
-![welcome Screen](./assets/output/welcome.png)
-![home Screen](./assets/output/home.png)
-![exercises Screen](./assets/output/exercises.png)
-![details Screen](./assets/output/detailsss.png)
+<div style="display: flex; justify-content: space-between; flex-wrap: wrap;">
+  <img src="./assets/output/welcome.png" alt="Welcome Screen" width="300">
+  <img src="./assets/output/home.png" alt="Home Screen" width="300">
+  <img src="./assets/output/exercises.png" alt="Exercises Screen" width="300">
+  <img src="./assets/output/detailsss.png" alt="Details Screen" width="300">
+</div>
 
 ## Acknowledgements
 
